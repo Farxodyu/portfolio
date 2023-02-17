@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'basement';
+    src: url('/fonts/gilroy/Gilroy-Medium.ttf');
+}
+@font-face {
+    font-family: 'quant';
+    src: url('/fonts/gilroy/Gilroy-Light.ttf');
+}
+@font-face {
+    font-family: 'quant-reg';
+    src: url('/fonts/gilroy/Gilroy-Regular.ttf');
+}
+@font-face {
+    font-family: 'otto';
+    src: url('/fonts/mazuis/MAZIUSREVIEW20.09-Italic.otf');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'otto-reg';
+    src: url('/fonts/mazuis/MAZIUSREVIEW20.09-Regular.otf');
+}

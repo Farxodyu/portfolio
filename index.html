@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="containerLiquid">
+        <div id="canvas"></div>
+        <div id="flowmap">
+            <img src="./img/Без%20имени-2.jpg" alt="" data-sampler="planeTexture" class="header__img"/>
+        </div>
+    </div>
+    <div class="mainInfo">
+        <div class="logo">Farxod <br> <span class="otto">Yuldashev</span></div>
+        <div class="menu">
+            menu
+<!--            <ul class="menu">-->
+<!--                <li><a href="#" class="menu__link">About</a></li>-->
+<!--                <li><a href="#" class="menu__link">Works</a></li>-->
+<!--                <li><a href="#" class="menu__link">Services</a></li>-->
+<!--                <li><a href="#" class="menu__link">Contacts</a></li>-->
+<!--            </ul>-->
+        </div>
+        <ul class="social">
+            <li><a href="#" class="social__link">telegram</a></li>
+            <li><a href="#" class="social__link">instagram</a></li>
+        </ul>
+        <div class="en">EN</div>
+        <h2 class="developer">
+            <span class="block">FRONT-<span class="otto">End</span></span>
+            <br>
+            <br>
+        </h2>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <h2 class="works">WO<span class="otto">R</span>KS</h2>
+        <div class="showcase">
+            <div class="cards psa1">
+                <img src="img/porten.jpg" alt="" class="cards__img">
+                <p class="showcase__info"></p>
+                <p class="showcase__info"></p>
+                <p class="showcase__block">
+                    <a href="" class="showcase__block__name">Por<span class="otto">t</span>en</a>
+                </p>
+            </div>
+            <div class="cards psa2">
+                <img src="img/childhood.jpg" alt="" class="cards__img">
+                <p class="showcase__info"></p>
+                <p class="showcase__info"></p>
+                <p class="showcase__block">
+                    <a href="" class="showcase__block__name"><span class="otto">Visit</span> Site</a>
+                </p>
+            </div>
+            <div class="cards psa3 ">
+                <img src="img/_C__Users_farxo_OneDrive_%25D0%25A0%25D0%25B0%25D0%25B1%25D0%25BE%25D1%2587%25D0%25B8%25D0%25B9%2520%25D1%2581%25D1%2582%25D0%25BE%25D0%25BB_projects_kwork_index.html.png" alt="" class="cards__img">
+                <p class="showcase__info"></p>
+                <p class="showcase__info"></p>
+                <p class="showcase__block">
+                    <a href="" class="showcase__block__name"><span class="otto">Visit</span> Site</a>
+                </p>
+            </div>
+            <div class="cards psa4">
+                <img src="img/_C__Users_farxo_OneDrive_%25D0%25A0%25D0%25B0%25D0%25B1%25D0%25BE%25D1%2587%25D0%25B8%25D0%25B9%2520%25D1%2581%25D1%2582%25D0%25BE%25D0%25BB_projects_kwork_index.html.png" alt="" class="cards__img">
+                <p class="showcase__info"></p>
+                <p class="showcase__info"></p>
+                <p class="showcase__block">
+                    <a href="" class="showcase__block__name"><span class="otto">Visit</span> Site</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="services">
+        <div class="mwrap">
+            <div class="panel">
+                <div class="services__text">
+                    serv<span class="otto">i</span>ces
+                </div>
+                <img src="img/round.svg" alt="" class="round_1">
+                <img src="img/round.svg" alt="" class="round_2">
+            </div>
+            <div class="panel bg-green">
+                <div class="services__info_top">
+                    <div class="mainInfo">
+                        <div class="menu menu__services">
+                            01
+                        </div>
+                    </div>
+                    <div class="services__main_block">
+                        <img src="img/serv2.jpg" alt="" class="services__img services__img_2">
+                        <div class="services__header">
+                            LANDING
+                        </div>
+                        <div class="black__squad"></div>
+                        <img src="img/serv1.jpg" alt="" class="services__img services__img_1">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="panel ">three</div>
+        </div>
+        <div class="servisec-null bg-primary">four</div>
+    </section>
+
+</main>
+
+
+<script src="scripts/gsap.min.js"></script>
+<script src="scripts/ScrollTrigger.min.js"></script>
+<script src="scripts/script.js" type="module"></script>
+<script>
+    gsap.to('.containerLiquid', {
+        scale: 5,
+        yPercent: 300,
+        autoAlpha: 0,
+        duration: 5,
+        ease: 'power4.easeInOut',
+        scrollTrigger: {
+            trigger: '.containerLiquid',
+            scrub: 1,
+            pin: true,
+        }
+    })
+    gsap.to('.developer', {
+        autoAlpha: 0,
+        y: -200,
+        ease: 'power4.easeInOut',
+        scrollTrigger: {
+            trigger: '.developer',
+            scrub: 1,
+            pin: true,
+        }
+    })
+</script>
+</body>
+</html>

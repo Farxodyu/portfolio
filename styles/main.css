@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-color: #0d0d0d;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.header__img{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+.container{
+    width: 1600px;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+.header{
+    overflow: hidden;
+    position: relative;
+}
+.mainInfo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-family: 'quant';
+    font-weight: 500;
+}
+.logo{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    z-index: 99;
+}
+.menu{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 99;
+}
+.social{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 99;
+}
+.en{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+}
+.developer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'basement';
+    padding-bottom: 200px;
+    font-size: 9rem;
+}
+
+/*///////////////////////////*/
+.main{
+    height: 100vh;
+}
+.works{
+    z-index: 99;
+    text-align: center;
+    font-family: 'basement';
+    font-size: 9rem;
+
+}
+.showcase{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+.cards{
+    position: relative;
+    margin-top: 100px;
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+}
+ .cards__img{
+     max-width: 100%;
+ }
+ .block{
+    display: block;
+ }
+ .otto{
+    font-family: 'otto';
+    color: #76fe3f;
+ }
+ .showcase__block__name{
+    background: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-family: 'quant-reg';
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-size: 30px;
+    z-index: 1000;
+ }
+
+.bg-primary{
+    background: blue;
+}
+.bg-green{
+}
+.bg-danger{
+    background: orangered;
+}
+.bg-grey{
+    background: grey;
+}
+
+html,body, .mwrap, .panel{
+    height: 100%;
+}
+.mwrap{
+    width: 300% !important;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.panel{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servisec-null{
+    width: 100%;
+    height: 100vh;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.services{
+    position: relative;
+    margin-top: 300px;
+    height: 100vh;
+}
+.services__text{
+    position: relative;
+    font-size: 4rem;
+    font-family: 'quant-reg';
+    padding: 120px 50px;
+    border: 1px solid #a7a7a7;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.round_1{
+    width: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.round_2{
+    width: 800px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+.menu__services{
+    font-family: "basement";
+    font-size: 3rem;
+    color: black;
+}
+.otto__services{
+    color: #000000;
+}
+.services__header {
+    position: absolute;
+    font-family: "basement";
+    font-size: 9rem;
+    color: #ffffff;
+    mix-blend-mode:difference;
+    z-index: 99;
+}
+.services__main_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    flex-wrap: nowrap;
+}
+.services__img{
+    max-width: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.services__img_1{
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    left: 50%;
+    width: 400px;
+    max-width: 100%;
+}
+.services__img_2{
+    position: absolute;
+    transform: translateY(50%);
+    top: 0;
+    left: 100px;
+    width: 600px;
+    max-width: 100%;
+}
+.black__squad{
+    position: absolute;
+    right: 0;
+    width: 30%;
+    max-width: 100%;
+    height: 700px;
+    background: #000;
+}
