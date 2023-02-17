@@ -1,18 +1,18 @@
-gsap.registerPlugin(ScrollTrigger);
-let sections = gsap.utils.toArray(".panel");
-
-gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".mwrap",
-        pin: true,
-        scrub: 1,
-        snap: 1 / (sections.length - 1),
-        // base vertical scrolling on how wide the container is so it feels more natural.
-        end: "+=3500",
-    }
-});
+// gsap.registerPlugin(ScrollTrigger);
+// let sections = gsap.utils.toArray(".panel");
+//
+// gsap.to(sections, {
+//     xPercent: -100 * (sections.length - 1),
+//     ease: "none",
+//     scrollTrigger: {
+//         trigger: ".mwrap",
+//         pin: true,
+//         scrub: 1,
+//         snap: 1 / (sections.length - 1),
+//         // base vertical scrolling on how wide the container is so it feels more natural.
+//         end: "+=3500",
+//     }
+// });
 
 gsap.to('.cards', {
     y: 150,
@@ -22,68 +22,81 @@ gsap.to('.cards', {
         start:'center center'
     }
 })
-gsap.to('.bg-green', {
-    backgroundColor:'#fff',
-    scrollTrigger: {
-        trigger: '.bg-green',
-        scrub: 2,
-        start:'right right',
-    }
-})
+
 gsap.to('.black__squad', {
-    width:'50%',
-    height:'100%',
+    width:'100%',
     scrollTrigger: {
         trigger: '.bg-green',
         scrub: 2,
-        start:'left -200% right',
-        markers:true
+        start:'top center',
+    }
+})
+
+gsap.to('.services__header', {
+    color:'#000',
+    scrollTrigger: {
+        trigger: '.services__header',
+        scrub: 2,
+        start:'top center',
     }
 })
 
 
 
-
-gsap.to('.services__img_2', {
-    x:-100,
-    autoAlpha:0,
+let tl = gsap.timeline();
+tl.to('.bg-green', {
+    backgroundColor:'#ffdf40',
     scrollTrigger: {
         trigger: '.bg-green',
         scrub: 2,
-        start:'left -200% right',
-        markers:true,
+        pin:true
+    }
+}).to('.services__img_2', {
+    scale:1.2,
+    scrollTrigger: {
+        trigger: '.services__img_2',
+        scrub: 2,
+        start:'top center',
+    }
+}).to('.services__img_1', {
+    scale:1.2,
+    scrollTrigger: {
+        trigger: '.services__img_1',
+        scrub: 2,
+        start:'top center',
     }
 })
-gsap.to('.services__img_1', {
-    x:-100,
-    autoAlpha:0,
-    scrollTrigger: {
-        trigger: '.bg-green',
-        scrub: 2,
-        start:'left -200% right',
-        markers:true,
-    }
+
+let lines = document.querySelectorAll('.line-design_line');
+lines.forEach((line, index) => {
+    gsap.to(line, {
+        width: '100vw',
+        duration:5,
+        scrollTrigger: {
+            trigger: line,
+            scrub: 4,
+            start:'bottom bottom',
+        }
+    })
 })
 gsap.from('.round_1', {
     autoAlpha:0,
     y: -200,
     ease: 'Bounce.easeOut',
     duration: 3,
-    scrollTrigger: {
+    scrollTrigger:{
         trigger: '.round_1',
-        scrub:1,
-        start:'center center'
+        scrub:true,
     }
 })
 gsap.from('.round_2', {
     autoAlpha:0,
     y: -200,
     ease: 'Bounce.easeOut',
-    duration: 3,
-    scrollTrigger: {
+    duration: 1,
+    scrollTrigger:{
         trigger: '.round_2',
-        scrub:1,
-        start:'center center'
+        scrub:true,
     }
 })
 

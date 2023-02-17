@@ -89,6 +89,7 @@ li{
     text-align: center;
     font-family: 'basement';
     font-size: 9rem;
+    position: relative;
 
 }
 .showcase{
@@ -103,7 +104,6 @@ li{
     width: 600px;
     height: 600px;
     background-color: #fff;
-    border-radius: 50px;
     overflow: hidden;
 }
  .cards__img{
@@ -114,7 +114,7 @@ li{
  }
  .otto{
     font-family: 'otto';
-    color: #76fe3f;
+    color: #ffdf40;
  }
  .showcase__block__name{
     background: rgb(0, 0, 0);
@@ -135,6 +135,8 @@ li{
     background: blue;
 }
 .bg-green{
+    overflow: hidden;
+    position: relative;
 }
 .bg-danger{
     background: orangered;
@@ -143,16 +145,7 @@ li{
     background: grey;
 }
 
-html,body, .mwrap, .panel{
-    height: 100%;
-}
-.mwrap{
-    width: 300% !important;
-    display: flex;
-    flex-wrap: nowrap;
-}
 .panel{
-    position: relative;
     width: 100%;
     height: 100vh;
     font-weight: 700;
@@ -162,7 +155,6 @@ html,body, .mwrap, .panel{
 }
 .servisec-null{
     width: 100%;
-    height: 100vh;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -179,13 +171,10 @@ body{
 }
 .services__text{
     position: relative;
-    font-size: 4rem;
+    font-size: 9rem;
+    text-align: center;
     font-family: 'quant-reg';
-    padding: 120px 50px;
-    border: 1px solid #a7a7a7;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    text-transform: uppercase;
 }
 .round_1{
     width: 900px;
@@ -202,7 +191,7 @@ body{
     z-index: 1000;
 }
 .menu__services{
-    font-family: "basement";
+    font-family: "basement", 'monsterrat';
     font-size: 3rem;
     color: black;
 }
@@ -212,9 +201,8 @@ body{
 .services__header {
     position: absolute;
     font-family: "basement";
-    font-size: 9rem;
-    color: #ffffff;
-    mix-blend-mode:difference;
+    font-size: 6rem;
+    color: #ffdf40;
     z-index: 99;
 }
 .services__main_block{
@@ -231,25 +219,135 @@ body{
 }
 .services__img_1{
     position: absolute;
-    bottom: 50px;
-    right: 50%;
-    left: 50%;
+    bottom: 10%;
+    right: 10%;
     width: 400px;
     max-width: 100%;
+    z-index: 100;
 }
 .services__img_2{
     position: absolute;
-    transform: translateY(50%);
+    top: 10%;
+    left: 10%;
+    width: 400px;
+    max-width: 100%;
+    z-index: 100;
+}
+/*.black__squad{*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    width: 30%;*/
+/*    max-width: 100%;*/
+/*    height: 700px;*/
+/*    background: #000;*/
+/*}*/
+.line-design{
+    position: absolute;
     top: 0;
-    left: 100px;
-    width: 600px;
+    left: 0;
+    z-index: 99999;
+}
+.line-design_line{
+    width: 0;
+    height: 1px;
+    background: #000;
+    margin-bottom: 100px;
+}
+
+.comerse{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+}
+.comerse__imfo__description{
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: "quant";
+    font-weight: 400;
+    line-height: 65px;
+    word-spacing: 10px;
+    mix-blend-mode: difference;
+    z-index: 99;
+}
+.comerse__view{
+    max-width: 50vw;
+
+    position: relative;
+}
+.comerse__view__product{
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 300px;
     max-width: 100%;
 }
-.black__squad{
+.comerse__info{
+    position: relative;
+    width: 50vw;
+}
+.comerse__info__product{
     position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 500px;
+    z-index: 99;
+}
+.comerse_yellow_quad{
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 900px;
+}
+.comerse__info__header{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    right: -20%;
+    bottom: 0;
+    font-size: 6rem;
+    font-weight: 500;
+    color: #ffffff;
+    z-index: 100;
+    font-family: 'basement', serif;
+    mix-blend-mode: difference;
+}
+.comerse__info__content{
+    font-size: 2rem;
+    font-family: "quant";
+    font-weight: 400;
+}
+.hobbies{
+
+}
+
+.zagolovok{
+    text-align: center;
+    font-family: "quant-reg",sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 9rem;
+    position: relative;
+}
+.books{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.books__img{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+.hobbies__book_descr{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
     right: 0;
-    width: 30%;
-    max-width: 100%;
-    height: 700px;
-    background: #000;
+    font-family: 'quant-reg', sans-serif;
+    font-size: 10rem;
+    mix-blend-mode:difference;
 }
