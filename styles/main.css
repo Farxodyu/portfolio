@@ -41,33 +41,56 @@ li{
     position: fixed;
     top: 0;
     left: 0;
-    font-size: 20px;
-    font-family: 'quant', sans-serif;
-    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    z-index: 199;
+    mix-blend-mode: difference;
 }
 .logo{
     position: absolute;
     left: 30px;
     top: 30px;
-    z-index: 99;
+    z-index: 199;
+    mix-blend-mode: difference;
 }
 .menu{
     position: absolute;
     right: 30px;
     top: 30px;
-    z-index: 99;
+    z-index: 199;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
 }
 .social{
     position: absolute;
     bottom: 30px;
     left: 30px;
-    z-index: 99;
+    z-index: 199;
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tg{
+    display: inline;
+    margin-right: 10px;
+}
+.burger{
+    width: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.write{
+    width: 80px;
 }
 .en{
     position: absolute;
     bottom: 30px;
     right: 30px;
-    z-index: 99;
+    z-index: 199;
+    mix-blend-mode: difference;
 }
 .developer{
     display: flex;
@@ -75,9 +98,12 @@ li{
     height: 100%;
     justify-content: center;
     align-items: flex-end;
-    font-family: 'basement', sans-serif;
+    font-family: 'quant-reg', sans-serif;
+    font-weight: 600;
     padding-bottom: 200px;
-    font-size: 9rem;
+    font-size: 6rem;
+    -webkit-text-fill-color:  transparent;
+    -webkit-text-stroke-width: 2.00px;
 }
 
 /*///////////////////////////*/
@@ -87,9 +113,12 @@ li{
 .works{
     z-index: 99;
     text-align: center;
-    font-family: 'basement', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 9rem;
     position: relative;
+    -webkit-text-fill-color:  transparent;
+    -webkit-text-stroke-width: 2.00px;
 
 }
 .showcase{
@@ -113,14 +142,23 @@ li{
     display: block;
  }
  .otto{
-    font-family: 'otto', sans-serif;
-    color: #ffdf40;
+     font-family: 'Neonderthaw', cursive;
+    color: #efef89;
+     text-shadow: #efef89 1px 0 10px;
+     font-weight: 400;
+     animation:ottoanim 3s infinite;
+ }
+ @keyframes ottoanim {
+     0%   {opacity: 0}
+     25%  {opacity: 1; animation-delay: 4s}
+     50%  {opacity: 0; animation-duration: 4s;}
+     100% {opacity: 1; animation-duration: 3s}
  }
  .showcase__block__name{
     background: rgb(0, 0, 0);
     padding: 10px 20px;
     border-radius: 40px;
-    font-family: 'quant-reg', sans-serif;
+     font-family: 'quant-reg', sans-serif;
     color: #ffffff;
     position: absolute;
     bottom: 0;
@@ -137,6 +175,7 @@ li{
 .bg-green{
     overflow: hidden;
     position: relative;
+    background: #efef89
 }
 .bg-danger{
     background: orangered;
@@ -173,8 +212,10 @@ body{
     position: relative;
     font-size: 9rem;
     text-align: center;
-    font-family: 'quant-reg', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    -webkit-text-fill-color:  transparent;
+    -webkit-text-stroke-width: 2.00px;
 }
 .round_1{
     width: 900px;
@@ -202,7 +243,7 @@ body{
     position: absolute;
     font-family: "basement", sans-serif;
     font-size: 6rem;
-    color: #ffdf40;
+    color: #efef89;
     z-index: 99;
 }
 .services__main_block{
@@ -266,7 +307,7 @@ body{
     font-size: 2rem;
     font-family: "quant", sans-serif;
     font-weight: 400;
-    line-height: 65px;
+    line-height: 55px;
     word-spacing: 10px;
     mix-blend-mode: difference;
     z-index: 99;
@@ -315,25 +356,25 @@ body{
 }
 .comerse__info__content{
     font-size: 2rem;
-    font-family: "quant", sans-serif;
+    font-family: "comerse-reg", sans-serif;
     font-weight: 400;
 }
-.hobbies{
 
-}
 
 .zagolovok{
     text-align: center;
-    font-family: "quant-reg",sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    -webkit-text-fill-color:  transparent;
+    -webkit-text-stroke-width: 2.00px;
     color: #fff;
-    font-size: 9rem;
+    font-size: 11rem;
     position: relative;
 }
 .books{
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -345,9 +386,90 @@ body{
 .hobbies__book_descr{
     position: absolute;
     text-align: center;
-    bottom: 0;
+    top: 50%;
     right: 0;
     font-family: 'quant-reg', sans-serif;
-    font-size: 10rem;
+    font-size: 6rem;
     mix-blend-mode:difference;
+}
+.books{
+    margin-top: 700px;
+}
+.video{
+    position: relative;
+    margin-top: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hobbies__video_descr{
+    text-align: center;
+    font-family: 'quant-reg', sans-serif;
+    font-size: 6rem;
+    mix-blend-mode: difference;
+    z-index: 100;
+}
+.video_dubl{
+    max-width: 900px;
+    opacity: .9;
+    transform: rotate(10deg);
+}
+.video__play{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    left: 0;
+    max-width: 900px;
+    width: 100%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+}
+.footer{
+    margin-top: 200px;
+}
+.number{
+    margin-right: 10px;
+}
+.footer__list{
+    position: relative;
+    z-index: 10000;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-items: center;
+    justify-content: center;
+}
+.footer__list__link{
+    padding: 20px 30px;
+    font-family: 'comerse-reg';
+    font-size: 26px;
+    position: relative;
+    transition: .5s;
+}
+.footer__list__link:hover{
+    background: #ffdf40;
+    color: #0d0d0d;
+    width: 300px;
+}
+.footer__list__link::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #31ffeb;
+}
+.footer__list__link::after:hover{
+    background: #000;
+}
+.int__img{
+    height: 50px;
+}
+.tg__img{
+    height: 70px;
 }

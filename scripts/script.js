@@ -41,31 +41,18 @@ gsap.to('.services__header', {
     }
 })
 
-
-
-let tl = gsap.timeline();
-tl.to('.bg-green', {
-    backgroundColor:'#ffdf40',
+gsap.from('.comerse__info__product', {
+    scale:.1,
+    autoAlpha:0,
     scrollTrigger: {
-        trigger: '.bg-green',
-        scrub: 2,
-        pin:true
-    }
-}).to('.services__img_2', {
-    scale:1.2,
-    scrollTrigger: {
-        trigger: '.services__img_2',
-        scrub: 2,
-        start:'top center',
-    }
-}).to('.services__img_1', {
-    scale:1.2,
-    scrollTrigger: {
-        trigger: '.services__img_1',
-        scrub: 2,
-        start:'top center',
+        trigger: '.comerse__info__product',
+        scrub: 1,
+        start:'top 1100px',
     }
 })
+
+
+
 
 let lines = document.querySelectorAll('.line-design_line');
 lines.forEach((line, index) => {
